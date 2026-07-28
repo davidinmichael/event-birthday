@@ -184,4 +184,24 @@
   .gallery-item {
     height: 320px !important;
   }
+
+  .gallery-overlay {
+    opacity: 1;
+
+    justify-content: flex-end;
+
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0.05)
+    );
+  }
+
+  .gallery-overlay p {
+    transform: none;
+  }
+
+  .gallery-overlay i {
+    display: none;
+  }
 }
