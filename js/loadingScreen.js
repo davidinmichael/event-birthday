@@ -134,7 +134,6 @@ function finishLoading() {
   setTimeout(() => {
     loadingScreen.remove();
 
-    initializeApp();
   }, 800);
 }
 

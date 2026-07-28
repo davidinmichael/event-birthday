@@ -76,9 +76,7 @@ Happy Birthday once again!`,
       description:
         "The day we met and unknowingly started an unforgettable friendship.",
       image:
-        "https://res.cloudinary.com/demo/image/upload/v0001/birthday/memory1.jpg",
-      video: "",
-      location: "Port Harcourt",
+        "https://res.cloudinary.com/dskpdlvxu/image/upload/v1785243954/6173_fsiui0.jpg",
       caption: "Every story has a beginning.",
     },
     {
@@ -88,10 +86,7 @@ Happy Birthday once again!`,
       description:
         "One of the happiest holidays we've ever celebrated together.",
       image:
-        "https://res.cloudinary.com/demo/image/upload/v0001/birthday/memory2.jpg",
-      video:
-        "https://res.cloudinary.com/demo/video/upload/v0001/birthday/memory2.mp4",
-      location: "Lagos",
+        "https://res.cloudinary.com/dskpdlvxu/image/upload/v1785243953/3048_mvik8f.jpg",
       caption: "A day full of laughter.",
     },
     {
@@ -101,9 +96,7 @@ Happy Birthday once again!`,
       description:
         "A spontaneous trip that turned into one of our favorite memories.",
       image:
-        "https://res.cloudinary.com/demo/image/upload/v0001/birthday/memory3.jpg",
-      video: "",
-      location: "Abuja",
+        "https://res.cloudinary.com/dskpdlvxu/image/upload/v1785238697/4246_rvnrr1.jpg",
       caption: "Life is better with adventures.",
     },
   ],

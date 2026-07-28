@@ -3,6 +3,4 @@ window.addEventListener("DOMContentLoaded", () => {
   renderHero();
   renderGreeting();
   renderTimeline();
-  renderGallery();
-  renderGreeting();
 });

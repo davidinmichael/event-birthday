@@ -67,7 +67,7 @@
 }
 
 .letter-paragraph {
-  opacity: 0;
+  opacity: 1;
 
   transform: translateY(30px);
 

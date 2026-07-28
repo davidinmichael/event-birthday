@@ -62,27 +62,33 @@ function renderGreeting() {
 }
 
 function animateGreeting() {
-  const paragraphs = document.querySelectorAll(".letter-paragraph");
+    const letterCard = document.querySelector(".letter-card");
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          paragraphs.forEach((paragraph, index) => {
-            setTimeout(() => {
-              paragraph.classList.add("show");
-            }, index * 400);
-          });
+    if (!letterCard) return;
 
-          observer.disconnect();
-        }
-      });
-    },
+    const observer = new IntersectionObserver((entries, observer) => {
 
-    {
-      threshold: 0.4,
-    },
-  );
+        entries.forEach(entry => {
 
-  observer.observe(document.querySelector(".letter-card"));
+            if (!entry.isIntersecting) return;
+
+            const paragraphs = entry.target.querySelectorAll(".letter-paragraph");
+
+            paragraphs.forEach((paragraph, index) => {
+
+                setTimeout(() => {
+                    paragraph.classList.add("show");
+                }, index * 350);
+
+            });
+
+            observer.unobserve(entry.target);
+
+        });
+
+    }, {
+        threshold: 0.2
+    });
+
+    observer.observe(letterCard);
 }
