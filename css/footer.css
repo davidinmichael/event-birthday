@@ -1,0 +1,144 @@
+/* ======================================
+   Footer
+====================================== */
+
+.footer{
+
+    background:#111827;
+
+    color:#fff;
+
+    padding:3rem 0 1.5rem;
+
+}
+
+.footer-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:2rem;
+
+    flex-wrap:wrap;
+
+    padding-bottom:2rem;
+
+    border-bottom:1px solid rgba(255,255,255,.1);
+
+}
+
+.footer-made-with{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:.6rem;
+
+    font-weight:600;
+
+}
+
+.footer-made-with i{
+
+    color:#ff4d6d;
+
+    animation:heartbeat 1.5s infinite;
+
+}
+
+.footer-socials{
+
+    display:flex;
+
+    gap:1rem;
+
+}
+
+.footer-socials a{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:rgba(255,255,255,.08);
+
+    transition:.35s;
+
+}
+
+.footer-socials a:hover{
+
+    background:var(--primary-color);
+
+    transform:translateY(-5px);
+
+}
+
+.footer-bottom{
+
+    margin-top:2rem;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:1rem;
+
+    color:rgba(255,255,255,.75);
+
+    font-size:.95rem;
+
+}
+
+.footer-bottom a{
+
+    color:var(--primary-color);
+
+    font-weight:600;
+
+}
+
+@keyframes heartbeat{
+
+    0%,100%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.25);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .footer-top,
+    .footer-bottom{
+
+        justify-content:center;
+
+        text-align:center;
+
+    }
+
+}

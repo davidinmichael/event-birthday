@@ -17,6 +17,8 @@ function initializeApp() {
   renderWishes();
 
   renderFinalLetter();
+
+  renderFooter();
 }
 
 window.addEventListener("DOMContentLoaded", () => {
