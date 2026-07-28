@@ -5,7 +5,7 @@ const birthdayData = {
     duration: 3500,
 
     backgroundImage:
-      "https://res.cloudinary.com/demo/image/upload/v0001/loading-bg.jpg",
+      "https://res.cloudinary.com/dskpdlvxu/image/upload/v1785238697/4246_rvnrr1.jpg",
 
     avatar:
       "https://res.cloudinary.com/dskpdlvxu/image/upload/v1782812634/stylish-black-girl_c8mi0u.jpg",
