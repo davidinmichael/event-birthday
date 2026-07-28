@@ -11,6 +11,8 @@ function initializeApp() {
   renderTimeline();
 
   renderGallery();
+
+  renderQualities();
 }
 
 window.addEventListener("DOMContentLoaded", () => {

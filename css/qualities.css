@@ -1,0 +1,102 @@
+/* ======================================
+   Qualities
+====================================== */
+
+.qualities {
+  background: #fff8f4;
+}
+
+.qualities-grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  gap: 2rem;
+
+  margin-top: 3rem;
+}
+
+.quality-card {
+  background: #fff;
+
+  border-radius: 18px;
+
+  padding: 2.5rem 2rem;
+
+  text-align: center;
+
+  box-shadow: var(--box-shadow);
+
+  transition: 0.4s;
+
+  opacity: 0;
+
+  transform: translateY(50px);
+}
+
+.quality-card.show {
+  opacity: 1;
+
+  transform: translateY(0);
+}
+
+.quality-card:hover {
+  transform: translateY(-10px);
+}
+
+.quality-icon {
+  width: 90px;
+
+  height: 90px;
+
+  margin: 0 auto 1.5rem;
+
+  border-radius: 50%;
+
+  background: rgba(255, 113, 0, 0.12);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: var(--primary-color);
+
+  font-size: 2rem;
+
+  animation: floatIcon 3s ease-in-out infinite;
+}
+
+.quality-card h3 {
+  margin-bottom: 1rem;
+
+  color: var(--heading);
+}
+
+.quality-card p {
+  color: var(--text);
+
+  line-height: 1.8;
+}
+
+@keyframes floatIcon {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@media (max-width: 768px) {
+  .qualities-grid {
+    gap: 1.5rem;
+  }
+
+  .quality-card {
+    padding: 2rem 1.5rem;
+  }
+}
