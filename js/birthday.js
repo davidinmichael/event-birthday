@@ -105,37 +105,37 @@ Happy Birthday once again!`,
     {
       id: 1,
       image:
-        "https://res.cloudinary.com/demo/image/upload/v0001/birthday/gallery1.jpg",
+        "https://res.cloudinary.com/dskpdlvxu/image/upload/v1785245719/50511_qeppna.jpg",
       caption: "Your beautiful smile.",
     },
     {
       id: 2,
       image:
-        "https://res.cloudinary.com/demo/image/upload/v0001/birthday/gallery2.jpg",
+        "https://res.cloudinary.com/dskpdlvxu/image/upload/v1785245749/102947_bf1acg.jpg",
       caption: "Always full of joy.",
     },
     {
       id: 3,
       image:
-        "https://res.cloudinary.com/demo/image/upload/v0001/birthday/gallery3.jpg",
+        "https://res.cloudinary.com/dskpdlvxu/image/upload/v1785245721/20782_e3emo2.jpg",
       caption: "One unforgettable moment.",
     },
     {
       id: 4,
       image:
-        "https://res.cloudinary.com/demo/image/upload/v0001/birthday/gallery4.jpg",
+        "https://res.cloudinary.com/dskpdlvxu/image/upload/v1785245720/42590_icyqyq.jpg",
       caption: "Making memories.",
     },
     {
       id: 5,
       image:
-        "https://res.cloudinary.com/demo/image/upload/v0001/birthday/gallery5.jpg",
+        "https://res.cloudinary.com/dskpdlvxu/image/upload/v1785245720/14007_dr76tv.jpg",
       caption: "Another reason to smile.",
     },
     {
       id: 6,
       image:
-        "https://res.cloudinary.com/demo/image/upload/v0001/birthday/gallery6.jpg",
+        "https://res.cloudinary.com/dskpdlvxu/image/upload/v1785245720/13585_kbcqeh.jpg",
       caption: "Simply amazing.",
     },
   ],

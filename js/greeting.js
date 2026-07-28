@@ -3,7 +3,9 @@ function renderGreeting() {
 
   const app = document.getElementById("app");
 
-  app.innerHTML += `
+  app.insertAdjacentHTML(
+    "beforeend",
+    `
         <section class="greeting">
 
             <div class="container">
@@ -56,39 +58,37 @@ function renderGreeting() {
             </div>
 
         </section>
-    `;
+    `,
+  );
 
   animateGreeting();
 }
 
 function animateGreeting() {
-    const letterCard = document.querySelector(".letter-card");
+  const letterCard = document.querySelector(".letter-card");
 
-    if (!letterCard) return;
+  if (!letterCard) return;
 
-    const observer = new IntersectionObserver((entries, observer) => {
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
 
-        entries.forEach(entry => {
+        const paragraphs = entry.target.querySelectorAll(".letter-paragraph");
 
-            if (!entry.isIntersecting) return;
-
-            const paragraphs = entry.target.querySelectorAll(".letter-paragraph");
-
-            paragraphs.forEach((paragraph, index) => {
-
-                setTimeout(() => {
-                    paragraph.classList.add("show");
-                }, index * 350);
-
-            });
-
-            observer.unobserve(entry.target);
-
+        paragraphs.forEach((paragraph, index) => {
+          setTimeout(() => {
+            paragraph.classList.add("show");
+          }, index * 350);
         });
 
-    }, {
-        threshold: 0.2
-    });
+        observer.unobserve(entry.target);
+      });
+    },
+    {
+      threshold: 0.2,
+    },
+  );
 
-    observer.observe(letterCard);
+  observer.observe(letterCard);
 }

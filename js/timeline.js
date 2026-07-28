@@ -3,7 +3,9 @@ function renderTimeline() {
 
   const memories = birthdayData.memories;
 
-  app.innerHTML += `
+  app.insertAdjacentHTML(
+    "beforeend",
+    `
         <section class="timeline">
 
             <div class="container">
@@ -62,7 +64,8 @@ function renderTimeline() {
             </div>
 
         </section>
-    `;
+    `,
+  );
 
   animateTimeline();
 }

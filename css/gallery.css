@@ -1,0 +1,187 @@
+/* ==========================================
+   Gallery
+========================================== */
+
+.gallery {
+  background: #fafafa;
+}
+
+.gallery-grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+  gap: 1.5rem;
+}
+
+.gallery-item {
+  position: relative;
+
+  overflow: hidden;
+
+  border-radius: 16px;
+
+  cursor: pointer;
+
+  box-shadow: var(--box-shadow);
+}
+
+.gallery-item:nth-child(odd) {
+  height: 420px;
+}
+
+.gallery-item:nth-child(even) {
+  height: 300px;
+}
+
+.gallery-item img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: 0.5s;
+}
+
+.gallery-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.15));
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: flex-end;
+
+  align-items: center;
+
+  gap: 1rem;
+
+  padding: 2rem;
+
+  color: #fff;
+
+  text-align: center;
+
+  opacity: 0;
+
+  transition: 0.4s;
+}
+
+.gallery-overlay p {
+  transform: translateY(20px);
+
+  transition: 0.4s;
+}
+
+.gallery-overlay i {
+  font-size: 1.4rem;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.08);
+}
+
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
+}
+
+.gallery-item:hover .gallery-overlay p {
+  transform: translateY(0);
+}
+
+/* ==========================================
+   Lightbox
+========================================== */
+
+#gallery-lightbox {
+  position: fixed;
+
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.95);
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  padding: 2rem;
+
+  z-index: 9999;
+
+  opacity: 0;
+
+  visibility: hidden;
+
+  transition: 0.35s;
+}
+
+#gallery-lightbox.active {
+  opacity: 1;
+
+  visibility: visible;
+}
+
+#gallery-lightbox img {
+  max-width: min(900px, 95vw);
+
+  max-height: 80vh;
+
+  border-radius: 14px;
+}
+
+#gallery-lightbox-caption {
+  color: #fff;
+
+  margin-top: 1.5rem;
+
+  font-size: 1.1rem;
+
+  text-align: center;
+}
+
+.gallery-close {
+  position: absolute;
+
+  top: 30px;
+
+  right: 30px;
+
+  width: 55px;
+
+  height: 55px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.12);
+
+  color: #fff;
+
+  cursor: pointer;
+
+  font-size: 1.4rem;
+
+  transition: 0.3s;
+}
+
+.gallery-close:hover {
+  background: var(--primary-color);
+}
+
+/* ==========================================
+   Responsive
+========================================== */
+
+@media (max-width: 768px) {
+  .gallery-item {
+    height: 320px !important;
+  }
+}
