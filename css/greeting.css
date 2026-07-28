@@ -1,0 +1,137 @@
+/* ======================================
+   Greeting Section
+====================================== */
+
+.greeting {
+  background: #fff8f4;
+}
+
+.letter-card {
+  max-width: 850px;
+
+  margin: auto;
+
+  background: #fff;
+
+  border-radius: 18px;
+
+  padding: 3rem;
+
+  box-shadow: var(--box-shadow);
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.letter-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 8px;
+
+  height: 100%;
+
+  background: var(--primary-color);
+}
+
+.letter-header {
+  text-align: center;
+
+  margin-bottom: 2rem;
+}
+
+.letter-header i {
+  font-size: 2.8rem;
+
+  color: var(--primary-color);
+
+  margin-bottom: 1rem;
+}
+
+.letter-header h2 {
+  margin-bottom: 0.5rem;
+}
+
+.letter-body {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 1.5rem;
+}
+
+.letter-paragraph {
+  opacity: 0;
+
+  transform: translateY(30px);
+
+  transition: 0.8s ease;
+
+  line-height: 1.9;
+
+  color: var(--text);
+}
+
+.letter-paragraph.show {
+  opacity: 1;
+
+  transform: translateY(0);
+}
+
+.letter-footer {
+  margin-top: 3rem;
+
+  padding-top: 2rem;
+
+  border-top: 1px solid #eee;
+}
+
+.signature {
+  display: flex;
+
+  align-items: center;
+
+  gap: 1rem;
+}
+
+.signature img {
+  width: 70px;
+
+  height: 70px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+
+  border: 3px solid var(--primary-color);
+}
+
+.signature small {
+  display: block;
+
+  color: #888;
+
+  margin-bottom: 0.3rem;
+}
+
+.signature h4 {
+  color: var(--heading);
+}
+
+@media (max-width: 768px) {
+  .letter-card {
+    padding: 2rem;
+  }
+
+  .signature {
+    flex-direction: column;
+
+    text-align: center;
+  }
+}

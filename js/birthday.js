@@ -65,7 +65,7 @@ Enjoy every second of your special day.
 Happy Birthday once again!`,
     sender: "David",
     signatureImage:
-      "https://res.cloudinary.com/demo/image/upload/v0001/birthday/signature.png",
+      "https://res.cloudinary.com/dskpdlvxu/image/upload/v1785243370/portrait-happy-excited-african-man_zy30fa.jpg",
   },
 
   memories: [
