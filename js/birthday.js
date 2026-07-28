@@ -44,11 +44,9 @@ const birthdayData = {
     description:
       "Every smile you've shared, every memory we've created, and every moment we've spent together has made life brighter.",
     heroImage:
-      "https://res.cloudinary.com/demo/image/upload/v0001/birthday/hero.jpg",
+      "https://res.cloudinary.com/dskpdlvxu/image/upload/v1785238697/4246_rvnrr1.jpg",
     heroVideo:
-      "https://res.cloudinary.com/demo/video/upload/v0001/birthday/hero.mp4",
-    backgroundMusic:
-      "https://res.cloudinary.com/demo/video/upload/v0001/birthday/background-music.mp3",
+      "https://res.cloudinary.com/dskpdlvxu/video/upload/v1785242824/Happy_Black_People-1_u3uidl.mp4",
     ctaText: "Start the Journey",
   },
 
