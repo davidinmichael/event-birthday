@@ -1,0 +1,105 @@
+/* ======================================
+   Birthday Wishes
+====================================== */
+
+.wishes {
+  background: #fafafa;
+}
+
+.wishes-grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+  gap: 2rem;
+
+  margin-top: 3rem;
+}
+
+.wish-card {
+  background: #fff;
+
+  border-radius: 18px;
+
+  padding: 2rem;
+
+  box-shadow: var(--box-shadow);
+
+  opacity: 0;
+
+  transform: translateY(50px);
+
+  transition: 0.5s;
+}
+
+.wish-card.show {
+  opacity: 1;
+
+  transform: translateY(0);
+}
+
+.wish-card:hover {
+  transform: translateY(-8px);
+}
+
+.wish-header {
+  display: flex;
+
+  align-items: center;
+
+  gap: 1rem;
+
+  margin-bottom: 1.5rem;
+}
+
+.wish-avatar {
+  width: 70px;
+
+  height: 70px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+
+  border: 3px solid var(--primary-color);
+
+  flex-shrink: 0;
+}
+
+.wish-header h4 {
+  margin-bottom: 0.3rem;
+
+  color: var(--heading);
+}
+
+.wish-header span {
+  color: var(--primary-color);
+
+  font-size: 0.9rem;
+
+  font-weight: 600;
+}
+
+.wish-message {
+  position: relative;
+}
+
+.wish-message i {
+  font-size: 2rem;
+
+  color: rgba(255, 113, 0, 0.2);
+
+  margin-bottom: 1rem;
+}
+
+.wish-message p {
+  color: var(--text);
+
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .wishes-grid {
+    grid-template-columns: 1fr;
+  }
+}

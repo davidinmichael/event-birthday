@@ -13,6 +13,8 @@ function initializeApp() {
   renderGallery();
 
   renderQualities();
+
+  renderWishes();
 }
 
 window.addEventListener("DOMContentLoaded", () => {

@@ -189,21 +189,21 @@ Happy Birthday once again!`,
       name: "John",
       relationship: "Best Friend",
       avatar:
-        "https://res.cloudinary.com/demo/image/upload/v0001/birthday/friend1.jpg",
+        "https://res.cloudinary.com/dskpdlvxu/image/upload/v1785243370/portrait-happy-excited-african-man_zy30fa.jpg",
       message: "Happy Birthday! May this year bring endless blessings.",
     },
     {
-      name: "Grace",
-      relationship: "Sister",
+      name: "Evang. David",
+      relationship: "Pastor",
       avatar:
-        "https://res.cloudinary.com/demo/image/upload/v0001/birthday/friend2.jpg",
-      message: "Keep shining and smiling. Happy Birthday!",
+        "https://res.cloudinary.com/dskpdlvxu/image/upload/v1785247381/WhatsApp_Image_2026-07-28_at_15.02.14_xk5vl1.jpg",
+      message: "God continue to bless and keep you fresh!",
     },
     {
-      name: "Michael",
+      name: "Grace",
       relationship: "Colleague",
       avatar:
-        "https://res.cloudinary.com/demo/image/upload/v0001/birthday/friend3.jpg",
+        "https://res.cloudinary.com/dskpdlvxu/image/upload/v1785245720/42590_icyqyq.jpg",
       message: "Wishing you success, peace, and happiness.",
     },
   ],
